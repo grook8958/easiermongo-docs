@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles.css">
+    
+   
+    <title>Easiermongo Documentation</title>
+</head>
+<body id="body">
+  <header id="page-header" class="page-header" role="banner">
+    <div class="navbar-top" id="navbar">
+      <a href="/">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#getting-started">Getting Started</a>
+      <a class="active" href="/docs">Documentation</a>
+      <a href="/faq">FAQ</a>
+    </div>
+    <h1 id="title" class="project-name">Easiermongo Documentation</h1>
+    <h2 class="project-tagline">An easy way to get started with MongoDB</h2>
+
+      <span class="btn">
+        <a href="https://github.com/grook8958/easiermongo" class="weight-500" target="_blank" rel="noopener">View on GitHub <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="mb-1 weight-500" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+      </span>
+      <span class="btn">
+        <a href="https://github.com/grook8958/easiermongo/releases/latest" class="weight-500" target="_blank" rel="noopener">Latest Release <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+      </span>
+      <span class="btn">
+        <a href="https://github.com/grook8958/easiermongo/releases/latest" class="weight-500" target="_blank" rel="noopener">View on NPM <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+      </span>
+      <br></br>
+      <span class="btn backround-darker">
+        <code class="bg-8 fw-300 em-1_5"id="npm-install-path">npm i easiermongo</code>
+        <button type="button" id="copy-button1" class="copy-button">
+          <span class="copy-button__text"><svg id="copy-button1__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.4em" height="1.4em" class="inline-block default-color mb-1" aria-hidden="true"><path id="copy-button1__icon__path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1M8 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m0 0h2a2 2 0 0 1 2 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg></span>
+        </button>
+      </span>
+  </header>
+    <main id="content" class="main-content" role="main">
+      
+    </main>
+    <script type="module">
+        import { copy } from "../../../scripts/copy.js"
+        copy()
+        tippy(document.getElementById("copy-button1"), {
+                content: "Copied",
+                placement:'top',
+                trigger: 'click',
+                delay: [0, 1000],
+                theme: 'green',
+                animation: "fade",
+                onShow(instance) {
+                  setTimeout(() => { instance.hide() }, 3000)
+                }
+                
+        })
+    </script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script name="tippy" src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+</body>
+</html>
