@@ -6,7 +6,7 @@ new Easiermongo.MongoClient(options)
 ````
 | Parameter | Type                   | Description |
 |-----------|------------------------|----------|
-| options   | [MongoClientOptions](../types/MongoClientOptions.md) | The options of your client     |
+| options   | [MongoClientOptions](../MongoClientOptions.md) | The options of your client     |
 
 
 ---
@@ -37,7 +37,7 @@ The database to which a connection was opened
 <a name=".options"><a/>
 ### [**.options**](#.options)
 The options that were used to initialize this client.
-<br>**Type:** [MongoClientOptions](../types/MongoClientOptions.md)<br/>
+<br>**Type:** [MongoClientOptions](../MongoClientOptions.md)<br/>
 
 ---
 <a name=".uri"><a/>

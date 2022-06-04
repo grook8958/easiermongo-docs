@@ -6,7 +6,7 @@ Here you will be able to find all the documentation about the various classes, t
 ## Classes
 - [ConnectionStringBuilder]()
 - [Database]()
-- [MongoClient](./classes/MongoClient.md)
+- [MongoClient](./MongoClient.md)
 - [MongoError]()
 - [MongoModel]()
 - [MongoSchema]()
