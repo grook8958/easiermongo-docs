@@ -1,4 +1,3 @@
-
 # Easiermongo Documentation
 
 Here you will be able to find all the documentation about the various classes, types of easiermongo.
@@ -17,4 +16,5 @@ Here you will be able to find all the documentation about the various classes, t
 - [SchemaFileManager]()
 - [SchemaManager]()
 - [Util]()
+
 ## Typedefs
