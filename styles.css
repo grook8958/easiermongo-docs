@@ -321,3 +321,23 @@ pre {
   font-size: 3em;
   font-weight: 600;
 }
+
+main input[type="text"] {
+  position: relative;
+  background: rgba(0, 0, 0, 0.09);
+  border-color: rgba(255,255,255,0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.375rem;
+  margin: 0;
+  padding: 1rem;
+  font-size:1rem
+}
+
+.hide {
+  display: none;
+}
+
+[data-docs-classes-container] {
+  display: grid;
+}
