@@ -11,7 +11,7 @@ client.on('ready', async () => {
     //Register your schema
     client.database.schemas.addSchema('myNewSchemaName', myNewSchema);
 
-    const mySchema = client.database.schemas.collection.get('your-schema-name');
+    const mySchema = client.database.schemas.collection.get('your-schema-name').schema;
     //You may also get your schema like this: const mySchema = client.database.schemas.SCHEMA_NAME_HERE;
     const result = await mySchema.get('some-id');
      
