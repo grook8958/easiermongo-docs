@@ -99,7 +99,7 @@ client.database.schemas.<span class="hljs-title function_">addSchema</span>(<spa
         <br></br>
         Once connected and your schemas are registered you may start performing actions
         <pre class="bg-8">
-<code><span class="hljs-keyword">const</span> mySchema = client.database.schemas.collection.<span class="hljs-title function_">get</span>(<span class="hljs-string">'your-schema-name'</span>).schema;
+<code><span class="hljs-keyword">const</span> mySchema = client.database.schemas.collection.<span class="hljs-title function_">get</span>(<span class="hljs-string">'your-schema-name'</span>).model;
 <span class="hljs-comment">//You may also get your schema like this: const mySchema = client.database.schemas.SCHEMA_NAME_HERE;</span>
 <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> mySchema.<span class="hljs-title function_">get</span>(<span class="hljs-string">'some-id'</span>);
 
