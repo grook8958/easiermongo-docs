@@ -14,8 +14,7 @@ searchInput.addEventListener("input", e => {
     const isVisible =
       docs.name.toLowerCase().includes(value) ||
       docs.href.toLowerCase().includes(value) ||
-      docs.fx.includes(value);
-    console.log(isVisible)
+    console.log(docs)
     if (!isVisible) docs.element.setAttribute("class", "hide");
     else if (isVisible) docs.element.removeAttribute("class", "hide");
   });
@@ -24,8 +23,7 @@ searchInput.addEventListener("input", e => {
     const isVisible =
       docs.name.toLowerCase().includes(value) ||
       docs.href.toLowerCase().includes(value) ||
-      docs.fx.includes(value);
-    console.log(isVisible)
+    console.log(docs)
     if (!isVisible) docs.element.setAttribute("class", "hide");
     else if (isVisible) docs.element.removeAttribute("class", "hide");
   });
