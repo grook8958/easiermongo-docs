@@ -1,7 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <h1>MongoClient</h1>
-        <strong>Under Construction</strong>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../styles.css">
+    
+   
+    <title>Easiermongo</title>
+</head>
+<body id="body">
+  <header id="page-header" class="page-header" role="banner">
+    <div class="navbar-top" id="navbar">
+      <a href="https://easiermongo.js.org/">Home</a>
+      <a href="https://easiermongo.js.org/#about">About</a>
+      <a href="https://easiermongo.js.org/#getting-started">Getting Started</a>
+      <a class="active" href="https://easiermongo.js.org/docs/v1/">Documentation</a>
+      <a href="https://easiermongo.js.org/faq/">FAQ</a>
+    </div>
+    <h1 id="title" class="project-name">Easiermongo</h1>
+    <h2 class="project-tagline">An easy way to get started with MongoDB</h2>
+
+    <span class="btn">
+        <a href="https://github.com/grook8958/easiermongo" class="weight-500" target="_blank" rel="noopener">View on GitHub <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="mb-1 weight-500" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+      </span>
+      <span class="btn">
+        <a href="https://github.com/grook8958/easiermongo/releases/latest" class="weight-500" target="_blank" rel="noopener">Latest Release <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+      </span>
+      <span class="btn">
+        <a href="https://npmjs.org/package/easiermongo" class="weight-500" target="_blank" rel="noopener">View on NPM <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+      </span>
+      <br></br>
+      <span class="btn backround-darker">
+        <code class="bg-8 fw-300 em-1_5"id="npm-install-path">npm i easiermongo</code>
+        <button type="button" id="copy-button1" class="copy-button">
+          <span class="copy-button__text"><svg id="copy-button1__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.4em" height="1.4em" class="inline-block default-color mb-1" aria-hidden="true"><path id="copy-button1__icon__path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1M8 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m0 0h2a2 2 0 0 1 2 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg></span>
+        </button> 
+      </span>
+  </header>
+    <main id="content" class="main-content" role="main">
+        <p class="lh-1">
+            <h1 class="lh-1"><strong>MongoClient</strong></h1>
+            <strong class="lh-1">extends <a href="https://nodejs.org/dist/latest/docs/api/events.html#events_class_eventemitter" class="weight-500" target="_blank" rel="noopener">EventEmitter <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></strong>
+        </p>
+        <p>The starting root of your Easiermongo project.</p>
+        <h2><strong>Constructor</strong></h2>
+        <pre class="fs-08em"><code><span class="hljs-keyword">new</span> <span class="hljs-name">MongoClient</span>(options);</code></pre>
+        <table class="content-table">
+            <thead>
+              <tr>
+                <th>PARAMETER</th>
+                <th>TYPE</th>
+                <th>DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>options</td>
+                <td><a href="../../typedefs/MongoClientOptions/">MongoClientOptions</a></td>
+                <td>The options to use for your client.</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="grid grid-colls-3 mb-10 mt-3">
+            <!---->
+            <div class="inline-block mr-10 ">
+              <button id="properties-dropdown-btn" class="dropdown-btn inline-block fs-1em">
+                <svg id="properties-dropdown-btn__icon__hide" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5l7 7l-7 7"></path></svg>
+                <svg hide="true" id="properties-dropdown-btn__icon__show" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9l-7 7l-7-7"></path></svg>
+                <span class="fw-500 fs-1em">PROPERTIES</span>
+              </button>
+              <ul id="properties-dropdown-list" hide="true" class="no-dot pis-25 mt-0_5">
+                <li class="docs-link"><a href="./#.db">db</a><span class="read-only">READ-ONLY</span></li>
+                <li class="docs-link"><a href="./#.database">database</a></li>
+                <li class="docs-link"><a href="./#.options">options</a></li>
+                <li class="docs-link"><a href="./#.uri">uri</a><span class="read-only">READ-ONLY</span></li>
+                <li class="docs-link"><a href="./#._mongoose">_mongoose</a></li>
+              </ul>
+            </div>
+            <div class="inline-block mr-10">
+              <button id="methods-dropdown-btn" class="dropdown-btn inline-block fs-1em">
+                <svg id="methods-dropdown-btn__icon__hide" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5l7 7l-7 7"></path></svg>
+                <svg hide="true" id="methods-dropdown-btn__icon__show" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9l-7 7l-7-7"></path></svg>
+                <span class="fw-500 fs-1em">METHODS</span>
+              </button>
+              <ul id="methods-dropdown-list" hide="true" class="no-dot pis-25 mt-0_5">
+                <li class="docs-link"><a href="./#.connect()">connect</a></li>
+                <li class="docs-link"><a href="./#.disconnect()">disconnect</a></li>
+              </ul>
+            </div>
+            <div class="inline-block mr-10">
+              <button id="events-dropdown-btn" class="dropdown-btn inline-block fs-1em">
+                <svg id="events-dropdown-btn__icon__hide" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5l7 7l-7 7"></path></svg>
+                <svg hide="true" id="events-dropdown-btn__icon__show" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9l-7 7l-7-7"></path></svg>
+                <span class="fw-500 fs-1em">EVENTS</span>
+              </button>
+              <ul id="events-dropdown-list" hide="true" class="no-dot pis-25 mt-0_5">
+                <li class="docs-link"><a href="./#error">error</a></li>
+                <li class="docs-link"><a href="./#disconnected">disconnected</a></li>
+                <li class="docs-link"><a href="./#disconnecting">disconnecting</a></li>
+                <li class="docs-link"><a href="./#connected">connected</a></li>
+                <li class="docs-link"><a href="./#connecting">connecting</a></li>
+                <li class="docs-link"><a href="./#reconnected">reconnected</a></li>
+                <li class="docs-link"><a href="./#close">close</a></li>
+                <li class="docs-link"><a href="./#ready">ready</a></li>
+              </ul>
+            </div>
+            <!---->
+          </div>
+          <div>
+            <h2>Properties</h2>
+            <div>
+              <h3 class="lh-1"><strong><a name=".db" href="./#.db">.db</a></strong><span class="read-only">READ-ONLY</span></h3>
+              The database to which a connection was opened.
+              <br><strong>Type:</strong> <a href="../Database/">Database</a><br/>
+            </div>
+            <hr>
+            <div>
+              <h3 class="lh-1"><strong><a name=".database" href="./#.database">.database</a></strong></h3>
+              The database to which a connection was opened.
+              <br><strong>Type:</strong> <a href="../Database/">Database</a><br/>
+            </div>
+            <hr>
+            <div>
+              <h3 class="lh-1"><strong><a name=".options" href="./#.options">.options</a></strong></h3>
+              The options that were used to initialize this client.
+              <br><strong>Type:</strong> <a href="../../typedefs/MongoClientOptions/">MongoClientOptions</a><br/>
+            </div>
+            <hr>
+            <div>
+              <h3 class="lh-1"><strong><a name=".uri" href="./#.uri">.uri</a></strong><span class="read-only">READ-ONLY</span></h3>
+              The URI connection string.
+              <br><strong>Type:</strong> ?<a href="../ConnectionStringBuilder/">ConnectionStringBuilder</a>|?<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a><br/>
+            </div>
+            <hr>
+            <div>
+              <h3 class="lh-1"><strong><a name="._mongoose" href="./#._mongoose">._mongoose</a></strong></h3>
+              The native mongoose connection to the database.
+              <br><strong>Type:</strong> <a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/api/connection.html">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a><br/>
+            </div>
+            <hr>
+          </div>
+          <div>
+            <h2>Methods</h2>
+            <div>
+              <h3 class="lh-1"><strong><a href="./#.connect()" name=".connect()">.connect(<span class="link-lighter">uri</span>)</a></strong></h3>
+              Opens a new connnection to your database.
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>uri</td>
+                    <td><a href="../ConnectionStringBuilder/">ConnectionStringBuilder</a>|<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
+                    <td>The options to use for your client.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../Database/">Database</a>&gt;</strong>
+              <hr>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a href="./#.disconnect()" name=".disconnect()">.disconnect()</a></strong></h3>
+              Close the connection from your database.
+              <br><strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">void <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;</strong>
+              <hr>
+            </div>
+          </div>
+          <div>
+            <h2>Events</h2>
+            <div>
+              <h3 class="lh-1"><strong><a name="error" href="./#error">error</a></strong></h3>
+              Emitted when an error occurs.
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>error</td>
+                    <td><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
+                    <td>The error thrown.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name="disconnected" href="./#disconnected">disconnected</a></strong></h3>
+              Emitted when then connection gets disconnected.
+              <hr>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name="disconnecting" href="./#disconnecting">disconnecting</a></strong></h3>
+              Emitted when the connection is disconnecting.
+              <hr>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name="connected" href="./#connected">connected</a></strong></h3>
+              Emitted when the connection is established.
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>database</td>
+                    <td><a target="_blank" rel="noopener" href="../Database/">Database</a></td>
+                    <td>The database where the connection was opened.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name="connecting" href="./#connecting">connecting</a></strong></h3>
+              Emitted when a connection is trying to be established.
+              <hr>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name="reconnected" href="./#reconnected">reconnected</a></strong></h3>
+              Emitted when the connection is reconnected after being disconnected.
+              <hr>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name="close" href="./#close">close</a></strong></h3>
+              Emitted when the connection is sucessfully closed.
+              <hr>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name="ready" href="./#ready">ready</a></strong></h3>
+              Emitted when the client is ready to perform actions.
+              <hr>
+            </div>
+          </div>
+    </main>
+  <script src="../../../../scripts/dropdown.js" type="module"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script name="tippy" src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script type="module">
+    import { copy } from "../../../../scripts/copy.js"
+    copy()
+    tippy(document.getElementById("copy-button1"), {
+            content: "Copied",
+            placement:'top',
+            trigger: 'click',
+            delay: [0, 1000],
+            theme: 'green',
+            animation: "fade",
+            onShow(instance) {
+              setTimeout(() => { instance.hide() }, 3000)
+            }
+            
+    })
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+</body>
 </html>
