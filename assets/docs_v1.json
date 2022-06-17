@@ -1,6 +1,7 @@
 {
     "classes": [
         {"name": "ConnectionStringBuilder", "href": "https://easiermongo.js.org/docs/v1/classes/ConnectionStringBuilder/"},
+        {"name": "Database", "href": "https://easiermongo.js.org/docs/v1/classes/Database/"},
         {"name": "MongoClient", "href": "https://easiermongo.js.org/docs/v1/classes/MongoClient/"},
         {"name": "MongoError", "href": "https://easiermongo.js.org/docs/v1/classes/MongoError/"},
         {"name": "MongoModel", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/"},
