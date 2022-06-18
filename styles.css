@@ -490,3 +490,9 @@ hr {
 .link-lighter {
   color: #1e6bb8cb;
 }
+
+.mini-code-block {
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  padding: 0.15rem;
+}
