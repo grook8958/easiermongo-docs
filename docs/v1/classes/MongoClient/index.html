@@ -17,28 +17,40 @@
       <a href="https://easiermongo.js.org/#getting-started">Getting Started</a>
       <a class="active" href="https://easiermongo.js.org/docs/v1/">Documentation</a>
       <a href="https://easiermongo.js.org/faq/">FAQ</a>
+      
     </div>
     <h1 id="title" class="project-name">Easiermongo</h1>
     <h2 class="project-tagline">An easy way to get started with MongoDB</h2>
-
-    <span class="btn">
+    <div>
+      <form autocomplete="off" action="/action_page.php" class="form-autocomplete">
+        <div class="autocomplete" style="width:300px;">
+          <input id="myInput" type="text" name="myCountry" placeholder="Search...">
+        </div>
+        <input hidden type="submit">
+      </form>
+    </div>
+    <div>
+      <div class="btn main-link-btn">
         <a href="https://github.com/grook8958/easiermongo" class="weight-500" target="_blank" rel="noopener">View on GitHub <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="mb-1 weight-500" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-      </span>
-      <span class="btn">
+      </div>
+      <div class="btn main-link-btn">
         <a href="https://github.com/grook8958/easiermongo/releases/latest" class="weight-500" target="_blank" rel="noopener">Latest Release <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
         </a>
-      </span>
-      <span class="btn">
+      </div>
+      <div class="btn main-link-btn">
         <a href="https://npmjs.org/package/easiermongo" class="weight-500" target="_blank" rel="noopener">View on NPM <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-      </span>
+      </div>
       <br></br>
       <span class="btn backround-darker">
         <code class="bg-8 fw-300 em-1_5"id="npm-install-path">npm i easiermongo</code>
         <button type="button" id="copy-button1" class="copy-button">
           <span class="copy-button__text"><svg id="copy-button1__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.4em" height="1.4em" class="inline-block default-color mb-1" aria-hidden="true"><path id="copy-button1__icon__path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1M8 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m0 0h2a2 2 0 0 1 2 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg></span>
-        </button> 
+        </button>
+          <!---->
+          
       </span>
-  </header>
+      </div>
+    </header>
     <main id="content" class="main-content" role="main">
         <p class="lh-1">
             <h1 class="lh-1"><strong>MongoClient</strong></h1>
@@ -116,31 +128,31 @@
               The database to which a connection was opened.
               <br><strong>Type:</strong> <a href="../Database/">Database</a><br/>
             </div>
-            <hr>
+            <div class="separator-line"></div>
             <div>
               <h3 class="lh-1"><strong><a name=".database" href="./#.database">.database</a></strong></h3>
               The database to which a connection was opened.
               <br><strong>Type:</strong> <a href="../Database/">Database</a><br/>
             </div>
-            <hr>
+            <div class="separator-line"></div>
             <div>
               <h3 class="lh-1"><strong><a name=".options" href="./#.options">.options</a></strong></h3>
               The options that were used to initialize this client.
               <br><strong>Type:</strong> <a href="../../typedefs/MongoClientOptions/">MongoClientOptions</a><br/>
             </div>
-            <hr>
+            <div class="separator-line"></div>
             <div>
               <h3 class="lh-1"><strong><a name=".uri" href="./#.uri">.uri</a></strong><span class="read-only">READ-ONLY</span></h3>
               The URI connection string.
               <br><strong>Type:</strong> ?<a href="../ConnectionStringBuilder/">ConnectionStringBuilder</a>|?<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a><br/>
             </div>
-            <hr>
+            <div class="separator-line"></div>
             <div>
               <h3 class="lh-1"><strong><a name="._mongoose" href="./#._mongoose">._mongoose</a></strong></h3>
               The native mongoose connection to the database.
               <br><strong>Type:</strong> <a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/api/connection.html">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a><br/>
             </div>
-            <hr>
+            <div class="separator-line"></div>
           </div>
           <div>
             <h2>Methods</h2>
@@ -164,13 +176,13 @@
                 </tbody>
               </table>
               <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../Database/">Database</a>&gt;</strong>
-              <hr>
+              <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a href="./#.disconnect()" name=".disconnect()">.disconnect()</a></strong></h3>
               Close the connection from your database.
               <br><strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">void <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;</strong>
-              <hr>
+              <div class="separator-line"></div>
             </div>
           </div>
           <div>
@@ -194,17 +206,17 @@
                   </tr>
                 </tbody>
               </table>
-              <hr>
+              <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a name="disconnected" href="./#disconnected">disconnected</a></strong></h3>
               Emitted when then connection gets disconnected.
-              <hr>
+              <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a name="disconnecting" href="./#disconnecting">disconnecting</a></strong></h3>
               Emitted when the connection is disconnecting.
-              <hr>
+              <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a name="connected" href="./#connected">connected</a></strong></h3>
@@ -225,27 +237,27 @@
                   </tr>
                 </tbody>
               </table>
-              <hr>
+              <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a name="connecting" href="./#connecting">connecting</a></strong></h3>
               Emitted when a connection is trying to be established.
-              <hr>
+              <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a name="reconnected" href="./#reconnected">reconnected</a></strong></h3>
               Emitted when the connection is reconnected after being disconnected.
-              <hr>
+              <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a name="close" href="./#close">close</a></strong></h3>
               Emitted when the connection is sucessfully closed.
-              <hr>
+              <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a name="ready" href="./#ready">ready</a></strong></h3>
               Emitted when the client is ready to perform actions.
-              <hr>
+              <div class="separator-line"></div>
             </div>
           </div>
     </main>
@@ -268,6 +280,7 @@
             
     })
   </script>
+  <script type="module" src="../../../../scripts/searchBar_v2.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
 </body>
