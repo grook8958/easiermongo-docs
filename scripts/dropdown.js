@@ -6,9 +6,9 @@ const propertiesDropdownList = document.getElementById('properties-dropdown-list
 const methodsDropdownList = document.getElementById('methods-dropdown-list');
 const eventsDropdownList = document.getElementById('events-dropdown-list');
 
-propertiesDropdownBtn.addEventListener('click', () => toggleDropdown(propertiesDropdownList));
-methodsDropdownBtn.addEventListener('click', () => toggleDropdown(methodsDropdownList));
-eventsDropdownBtn.addEventListener('click', () => toggleDropdown(eventsDropdownList));
+if (propertiesDropdownBtn) propertiesDropdownBtn.addEventListener('click', () => toggleDropdown(propertiesDropdownList));
+if (methodsDropdownBtn) methodsDropdownBtn.addEventListener('click', () => toggleDropdown(methodsDropdownList));
+if (eventsDropdownBtn) eventsDropdownBtn.addEventListener('click', () => toggleDropdown(eventsDropdownList));
 
 function toggleDropdown(dropdown) {
     const type = dropdown.id.replace('-list', '')
