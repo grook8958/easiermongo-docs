@@ -30,7 +30,8 @@ function autocomplete(inp, arr) {
               class: "C",
               typedef: "T",
               method: "M",
-              property: "P"
+              property: "P",
+              event: "E"
             }
             b.innerHTML = `<span class="${type}">${signTypes[type]}</span>`
             b.innerHTML += "<strong>" + arr[i].name.substr(0, val.length) + "</strong>";
@@ -57,7 +58,8 @@ function autocomplete(inp, arr) {
               class: "C",
               typedef: "T",
               method: "M",
-              property: "P"
+              property: "P",
+              event: "E"
             }
             b.innerHTML = `<span class="${type}">${signTypes[type]}</span>`
             const regex = new RegExp(`(${val})`, 'gmi');

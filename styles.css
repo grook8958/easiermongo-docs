@@ -562,6 +562,22 @@ div.grid div {
   float: left;
 }
 
+.event {
+  text-align: center;
+  border-radius: 0.175rem;
+  box-sizing: .3em .6em;
+  background-color: #1aea8c;
+  color: #fff;
+  font-size: .9em;
+  font-weight: 900;
+  margin-right: 1em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  padding-right: .8em;
+  padding-left: .8em;
+  float: left;
+}
+
 hr {
   border: solid;
   border-width: 2px;
