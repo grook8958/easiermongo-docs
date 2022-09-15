@@ -20,27 +20,37 @@
     </div>
     <h1 id="title" class="project-name">Easiermongo</h1>
     <h2 class="project-tagline">An easy way to get started with MongoDB</h2>
-
-    <span class="btn">
+    <div>
+      <form autocomplete="off" action="/action_page.php" class="form-autocomplete">
+        <div class="autocomplete" style="width:300px;">
+          <input id="myInput" type="text" name="myCountry" placeholder="Search...">
+        </div>
+        <input hidden type="submit">
+      </form>
+    </div>
+    <div>
+      <div class="btn main-link-btn">
         <a href="https://github.com/grook8958/easiermongo" class="weight-500" target="_blank" rel="noopener">View on GitHub <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="mb-1 weight-500" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-      </span>
-      <span class="btn">
+      </div>
+      <div class="btn main-link-btn">
         <a href="https://github.com/grook8958/easiermongo/releases/latest" class="weight-500" target="_blank" rel="noopener">Latest Release <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
         </a>
-      </span>
-      <span class="btn">
+      </div>
+      <div class="btn main-link-btn">
         <a href="https://npmjs.org/package/easiermongo" class="weight-500" target="_blank" rel="noopener">View on NPM <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-      </span>
+      </div>
       <br></br>
       <span class="btn backround-darker">
         <code class="bg-8 fw-300 em-1_5"id="npm-install-path">npm i easiermongo</code>
         <button type="button" id="copy-button1" class="copy-button">
           <span class="copy-button__text"><svg id="copy-button1__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.4em" height="1.4em" class="inline-block default-color mb-1" aria-hidden="true"><path id="copy-button1__icon__path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1M8 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m0 0h2a2 2 0 0 1 2 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg></span>
-        </button> 
+        </button>
+          <!---->
+          
       </span>
-  </header>
+      </div>
+    </header>
     <main id="content" class="main-content" role="main">
-      <h1>Under Construction!</h1>
         <p class="lh-1">
             <h1 class="lh-1"><strong>MongoModel</strong></h1>
         </p>
@@ -87,6 +97,8 @@
                 <li class="docs-link"><a href="./#._model">_model</a></li>
                 <li class="docs-link"><a href="./#.makeCache">makeCache</a></li>
                 <li class="docs-link"><a href="./#.cache">cache</a></li>
+                <li class="docs-link"><a href="./#.ttl">ttl</a></li>
+                <li class="docs-link"><a href="./#._expiryManager">_expiryManager</a></li>
               </ul>
             </div>
             <div class="inline-block mr-10">
@@ -100,11 +112,18 @@
                 <li class="docs-link"><a href="./#.create()">create</a></li>
                 <li class="docs-link"><a href="./#.getAll()">getAll</a></li>
                 <li class="docs-link"><a href="./#.get()">get</a></li>
-                <li class="docs-link"><a href="./#.find()">get</a></li>
-                <li class="docs-link"><a href="./#.findMany()">get</a></li>
-                <li class="docs-link"><a href="./#.edit()">get</a></li>
-                <li class="docs-link"><a href="./#.findAndEdit()">get</a></li>
-                <li class="docs-link"><a href="./#.editMany()">get</a></li>
+                <li class="docs-link"><a href="./#.find()">find</a></li>
+                <li class="docs-link"><a href="./#.findMany()">findMany</a></li>
+                <li class="docs-link"><a href="./#.edit()">edit</a></li>
+                <li class="docs-link"><a href="./#.findAndEdit()">findAndEdit</a></li>
+                <li class="docs-link"><a href="./#.editMany()">editMany</a></li>
+                <li class="docs-link"><a href="./#.delete()">delete</a></li>
+                <li class="docs-link"><a href="./#.findAndDelete()">findAndDelete</a></li>
+                <li class="docs-link"><a href="./#.deleteMany()">deleteMany</a></li>
+                <li class="docs-link"><a href="./#.update()">update</a></li>
+                <li class="docs-link"><a href="./#.findAndUpdate()">findAndUpdate</a></li>
+                <li class="docs-link"><a href="./#.updateMany()">updateMany</a></li>
+                <li class="docs-link"><a href="./#.onExpire()">onExpire</a></li>
               </ul>
             </div>
             <!---->
@@ -116,19 +135,31 @@
               The model it is representing
               <br><strong>Type:</strong> <a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/api/model.html">Model <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a><br/>
             </div>
-            <hr>
+            <div class="separator-line"></div>
             <div>
               <h3 class="lh-1"><strong><a name=".makeCache" href="./#.makeCache">.makeCache</a></strong></h3>
               Wether easiermongo should cache documents when fetched from the database.
               <br><strong>Type:</strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a><br/>
             </div>
-            <hr>
+            <div class="separator-line"></div>
             <div>
               <h3 class="lh-1"><strong><a name=".cache" href="./#.cache">.cache</a></strong></h3>
               Wether easiermongo should cache documents when fetched from the database.
               <br><strong>Type:</strong> <a target="_blank" rel="noopener" href="https://discord.js.org/#/docs/collection/main/class/Collection">Collection <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a><br/>
             </div>
-            <hr>
+            <div class="separator-line"></div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".ttl" href="./#.ttl">.ttl</a></strong></h3>
+              The TTL (Time-To-Live) a document in this collection has.
+              <br><strong>Type:</strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>|<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null">null <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a><br/>
+            </div>
+            <div class="separator-line"></div>
+            <div>
+              <h3 class="lh-1"><strong><a name="._expiryManager" href="./#._expiryManager">._expiryManager</a></strong></h3>
+              The expiry manager of this model
+              <br><strong>Type:</strong> <a href="../DocumentExpiryManager/">DocumentExpiryManager</a><br/>
+            </div>
+            <div class="separator-line"></div>
           <div>
             <h2>Methods</h2>
             <div>
@@ -145,22 +176,22 @@
                 <tbody>
                   <tr>
                     <td>document</td>
-                    <td></strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
+                    <td></strong><a href="../DocumentBuilder/">DocumentBuilder</a>|<a href="../../typedefs/BaseDocumentData">BaseDocumentData</a></td>
                     <td>The document object according to what was
                       <br>
                       set when creating the schema.</td>
                   </tr>
                 </tbody>
               </table>
-              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;</strong>
-              <hr>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;</strong>
+              <div class="separator-line"></div>
             </div>
             <div>
                 <h3 class="lh-1"><strong><a name=".getAll()" href="./#.getAll()">.getAll()</a></strong></h3>
                 Get all the documents in this collection.
                 <br>
-                <strong>Returns:</strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;&gt;</a>
-                <hr>
+                <strong>Returns:</strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;&gt;</a>
+                <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a name=".get()" href="./#.get()">.get(<span class="link-lighter">id</span>)</a></strong></h3>
@@ -181,12 +212,18 @@
                   </tr>
                 </tbody>
               </table>
-              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;</strong>
-              <hr>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;</strong>
+              <br><br><strong>Example:</strong>
+              <pre class="bg-8"><code><span class="hljs-keyword">const</span> document = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">model</span>.<span class="hljs-title function_">get</span>(<span class="hljs-string">'someId'</span>)<br>  .<span class="hljs-title function_">catch</span>(err => <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err))<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(document)</code></pre>
+              <div class="separator-line"></div>
             </div>
             <div>
               <h3 class="lh-1"><strong><a name=".find()" href="./#.find()">.find(<span class="link-lighter">query</span>)</a></strong></h3>
               Searches for one document matching the query
+              <div class="warning-container">
+                <p class="title">WARNING</p>
+                <p class="body">If you want to find a document using it's <span class="mini-code-block">_id</span> use the <a href="./#.get()"><span class="fw-600">get</span></a> method instead</p>
+              </div>
               <table class="content-table">
                 <thead>
                   <tr>
@@ -198,13 +235,358 @@
                 <tbody>
                   <tr>
                     <td>query</td>
-                    <td></strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
+                    <td></strong> <a href="../../typedefs/MongoQuery/">MongoQuery</a></td>
                     <td>The query to search for</td>
                   </tr>
                 </tbody>
               </table>
-              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;</strong>
-              <hr>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;</strong>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".find()" href="./#.findMany()">.findMany(<span class="link-lighter">query</span>)</a></strong></h3>
+              Searches for all document matching the query
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>query</td>
+                    <td></strong> <a href="../../typedefs/MongoQuery/">MongoQuery</a></td>
+                    <td>The query to search for</td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns:</strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;&gt;</a>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".edit()" href="./#.edit()">.edit(<span class="link-lighter">id, change, [options]</span>)</a></strong></h3>
+              Edits a document using it's id.
+              <div class="tip-container">
+                <p class="title">TIP</p>
+                <p class="body">Setting the option <span class="mini-code-block">new</span> to <span class="mini-code-block">true</span> returns the newly edited document!</p>
+              </div>
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>OPTIONAL</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>id</td>
+                    <td></strong> <a target="_blank" rel="noopener"   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
+                    <td></td>
+                    <td>The document's <span class="mini-code-block">_id</span></td>
+                  </tr>
+                  <tr>
+                    <td>change</td>
+                    <td></strong> <a href="../../typedefs/MongoChange/">MongoChange</a></td>
+                    <td></td>
+                    <td>The changes it should apply to the document</td>
+                  </tr>
+                  <tr>
+                    <td>options</td>
+                    <td></strong> <a href="../../typedefs/ModelEditOptions/">ModelEditOptions</a></td>
+                    <td><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="h-5 w-5 mx-auto" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 13l4 4L19 7"></path></svg></td>
+                    <td>The options of this edit</td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;</strong>
+              <br><br>
+              <strong>Example:</strong>
+              <pre class="bg-8"><code><span class="hljs-keyword">const</span> newDocument = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">model</span>.<span class="hljs-title function_">edit</span>(<span class="hljs-string">'some-id'</span>, { <span class="hljs-attr">age</span>: <span class="hljs-number">48</span> }, { <span class="hljs-attr">new</span>: <span class="hljs-literal">true</span> })<br> .<span class="hljs-title function_">catch</span>(err => <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err))<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(newDocument);</code></pre>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".findAndEdit()" href="./#.findAndEdit()">.findAndEdit(<span class="link-lighter">query, change, [options]</span>)</a></strong></h3>
+              Finds and edits one or more documents
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>OPTIONAL</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>query</td>
+                    <td></strong> <a href="../../typedefs/MongoQuery/">MongoQuery</a></td>
+                    <td></td>
+                    <td>The query to search for</span></td>
+                  </tr>
+                  <tr>
+                    <td>change</td>
+                    <td></strong> <a href="../../typedefs/MongoChange/">MongoChange</a></td>
+                    <td></td>
+                    <td>The changes it should apply to the document</td>
+                  </tr>
+                  <tr>
+                    <td>options</td>
+                    <td></strong> <a href="../../typedefs/ModelEditOptions/">ModelEditOptions</a></td>
+                    <td><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="h-5 w-5 mx-auto" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 13l4 4L19 7"></path></svg></td>
+                    <td>The options of this edit</td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;</strong>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".editMany()" href="./#.editMany()">.editMany(<span class="link-lighter">query, change, [options]</span>)</a></strong></h3>
+              Finds and edits one or more documents
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>OPTIONAL</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>query</td>
+                    <td></strong> <a href="../../typedefs/MongoQuery/">MongoQuery</a></td>
+                    <td></td>
+                    <td>The query to search for</span></td>
+                  </tr>
+                  <tr>
+                    <td>change</td>
+                    <td></strong> <a href="../../typedefs/MongoChange/">MongoChange</a></td>
+                    <td></td>
+                    <td>The changes that should apply to all the documents matching the query</td>
+                  </tr>
+                  <tr>
+                    <td>options</td>
+                    <td></strong> <a href="../../typedefs/ModelEditOptions/">ModelEditOptions</a></td>
+                    <td><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="h-5 w-5 mx-auto" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 13l4 4L19 7"></path></svg></td>
+                    <td>The options of this edit</td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;&gt;</strong>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".delete()" href="./#.delete()">.delete(<span class="link-lighter">id</span>)</a></strong></h3>
+              Deletes a document using it's id.
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>id</td>
+                    <td></strong> <a target="_blank" rel="noopener"   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
+                    <td>The document's <span class="mini-code-block">_id</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void">void <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;</strong>
+              <br><br>
+              <strong>Example:</strong>
+              <pre class="bg-8"><code><span class="hljs-variable language_">model</span>.<span class="hljs-title function_">edit</span>(<span class="hljs-string">'some-id'</span>)<br> .<span class="hljs-title function_">then</span>(() => <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Deleted document of id "some-id"'</span>))<br> .<span class="hljs-title function_">catch</span>(err => <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err))</code></pre>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".findAndEdit()" href="./#.findAndDelete()">.findAndDelete(<span class="link-lighter">query</span>)</a></strong></h3>
+              Finds a document then deletes it.
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>query</td>
+                    <td></strong> <a href="../../typedefs/MongoQuery/">MongoQuery</a></td>
+                    <td>The query to search for</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void">void <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;</strong>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".deleteMany()" href="./#.deleteMany()">.deleteMany(<span class="link-lighter">query</span>)</a></strong></h3>
+              Finds documents and deletes them
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>query</td>
+                    <td></strong> <a href="../../typedefs/MongoQuery/">MongoQuery</a></td>
+                    <td>The query to search for</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void">void <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;</strong>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".update()" href="./#.update()">.update(<span class="link-lighter">id, change, [options]</span>)</a></strong></h3>
+              Updates a document without overriding content of objects.
+              <div class="danger-container">
+                <p class="title">DANGER</p>
+                <p class="body">This behaves like <a href="./.edit()">.edit()</a> except it doesn't override content of objects.<br>Decreased performance are to expect<br><strong>IMPORTANT: This will not work unless updating objects</strong></p>
+              </div>
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>OPTIONAL</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>id</td>
+                    <td></strong> <a target="_blank" rel="noopener"   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
+                    <td></td>
+                    <td>The document's <span class="mini-code-block">_id</span></td>
+                  </tr>
+                  <tr>
+                    <td>change</td>
+                    <td></strong> <a href="../../typedefs/MongoChange/">MongoChange</a></td>
+                    <td></td>
+                    <td>The changes it should apply to the document</td>
+                  </tr>
+                  <tr>
+                    <td>options</td>
+                    <td></strong> <a href="../../typedefs/ModelEditOptions/">ModelEditOptions</a></td>
+                    <td><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="h-5 w-5 mx-auto" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 13l4 4L19 7"></path></svg></td>
+                    <td>The options of this update</td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;</strong>
+              <br><br>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".findAndUpdate()" href="./#.findAndUpdate()">.findAndUpdate(<span class="link-lighter">query, change, [options]</span>)</a></strong></h3>
+              Finds a document then updates it.
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>OPTIONAL</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>query</td>
+                    <td></strong> <a href="../../typedefs/MongoQuery/">MongoQuery</a></td>
+                    <td></td>
+                    <td>The query to search for</span></td>
+                  </tr>
+                  <tr>
+                    <td>change</td>
+                    <td></strong> <a href="../../typedefs/MongoChange/">MongoChange</a></td>
+                    <td></td>
+                    <td>The changes it should apply to the document</td>
+                  </tr>
+                  <tr>
+                    <td>options</td>
+                    <td></strong> <a href="../../typedefs/ModelEditOptions/">ModelEditOptions</a></td>
+                    <td><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="h-5 w-5 mx-auto" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 13l4 4L19 7"></path></svg></td>
+                    <td>The options of this edit</td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;</strong>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".updateMany()" href="./#.updateMany()">.updateMany(<span class="link-lighter">query, change, [options]</span>)</a></strong></h3>
+              Finds and updates one or more documents
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>OPTIONAL</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>query</td>
+                    <td></strong> <a href="../../typedefs/MongoQuery/">MongoQuery</a></td>
+                    <td></td>
+                    <td>The query to search for</span></td>
+                  </tr>
+                  <tr>
+                    <td>change</td>
+                    <td></strong> <a href="../../typedefs/MongoChange/">MongoChange</a></td>
+                    <td></td>
+                    <td>The changes that should apply to all the documents matching the query</td>
+                  </tr>
+                  <tr>
+                    <td>options</td>
+                    <td></strong> <a href="../../typedefs/ModelEditOptions/">ModelEditOptions</a></td>
+                    <td><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="h-5 w-5 mx-auto" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 13l4 4L19 7"></path></svg></td>
+                    <td>The options of this edit</td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a href="../MongoDocument/">MongoDocument</a>&gt;&gt;</strong>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".onExpire()" href="./#.onExpire()">.onExpire(<span class="link-lighter">callback</span>)</a></strong></h3>
+              Runs the callback each time a document expires.
+              <div class="warning-container">
+                <p class="title">WARNING</p>
+                <p class="body">Documents created <strong>before</strong> the code was ran are not taken into notice</p>
+              </div>
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>callback</td>
+                    <td></strong><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener"   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"><span class="link-lighter">string</span> <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>, <a href="../MongoDocument/"><span class="link-lighter">MongoDocument</span></a>&gt;</td>
+                    <td>The function to run when a document expires</td>
+                  </tr>
+                </tbody>
+              </table>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void">void <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></strong>
+              <div class="separator-line"></div>
             </div>
           </div>
     </main>
@@ -227,6 +609,7 @@
             
     })
   </script>
+  <script type="module" src="../../../../scripts/searchBar_v2.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
 </body>
