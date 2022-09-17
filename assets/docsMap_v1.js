@@ -30,6 +30,8 @@ const Classes = [
 const Typedefs = [
     {name: "BaseDocumentData", type: "typedef", get href() {return URL(this)}},
     {name: "ConnectionStringBuilderData", type: "typedef", get href() {return URL(this)}},
+    {name: "DocumentBuilderData", type: "typedef", get href() {return URL(this)}},
+    {name: "DocumentBuilderFieldData", type: "typedef", get href() {return URL(this)}},
     {name: "ModelEditOptions", type: "typedef", get href() {return URL(this)}},
     {name: "MongoChange", type: "typedef", get href() {return URL(this)}},
     {name: "MongoClientOptions", type: "typedef", get href() {return URL(this)}},
@@ -119,6 +121,17 @@ const ConnectionStringBuilder_Methods_Properties = [
     {name: "ConnectionStringBuilder.toString()", parent: "ConnectionStringBuilder", type: "method", get href() { return URL(this)}},
     {name: "ConnectionStringBuilder.toJSON()", parent: "ConnectionStringBuilder", type: "method", get href() { return URL(this)}},
 
+];
+
+const DocumentBuilder_Methods_Properties = [
+    //Properties
+    {name: "DocumentBuilder.id", parent: "DocumentBuilder", type: "property", get href() {return URL(this)}},
+    {name: "DocumentBuilder.cFields", parent: "DocumentBuilder", type: "property", get href() {return URL(this)}},
+    //Methods
+    {name: "DocumentBuilder.from()", parent: "DocumentBuilder", type: "method", get href() {return URL(this)}},
+    {name: "DocumentBuilder.setId()", parent: "DocumentBuilder", type: "method", get href() {return URL(this)}},
+    {name: "DocumentBuilder.addField()", parent: "DocumentBuilder", type: "method", get href() {return URL(this)}},
+    {name: "DocumentBuilder.addFields()", parent: "DocumentBuilder", type: "method", get href() {return URL(this)}},
 ]
 
 export default {
@@ -137,5 +150,8 @@ export default {
 
         //MongoModel
         ...MongoModel_Methods_Properties,
+
+        //DocumentBuilder
+        ...DocumentBuilder_Methods_Properties
     ]
 }
