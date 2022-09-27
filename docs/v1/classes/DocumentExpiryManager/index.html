@@ -1,7 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <h1>DocumentExpiryManager</h1>
-        <strong>Under Construction</strong>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../styles.css">
+    
+   
+    <title>Easiermongo</title>
+</head>
+<body id="body">
+  <header id="page-header" class="page-header" role="banner">
+    <div class="navbar-top" id="navbar">
+      <a href="https://easiermongo.js.org/">Home</a>
+      <a href="https://easiermongo.js.org/#about">About</a>
+      <a href="https://easiermongo.js.org/#getting-started">Getting Started</a>
+      <a class="active" href="https://easiermongo.js.org/docs/v1/">Documentation</a>
+      <a href="https://easiermongo.js.org/faq/">FAQ</a>
+      
+    </div>
+    <h1 id="title" class="project-name">Easiermongo</h1>
+    <h2 class="project-tagline">An easy way to get started with MongoDB</h2>
+    <div>
+      <form autocomplete="off" action="/action_page.php" class="form-autocomplete">
+        <div class="autocomplete" style="width:300px;">
+          <input id="myInput" type="text" name="myCountry" placeholder="Search...">
+        </div>
+        <input hidden type="submit">
+      </form>
+    </div>
+    <div>
+      <div class="btn main-link-btn">
+        <a href="https://github.com/grook8958/easiermongo" class="weight-500" target="_blank" rel="noopener">View on GitHub <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="mb-1 weight-500" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+      </div>
+      <div class="btn main-link-btn">
+        <a href="https://github.com/grook8958/easiermongo/releases/latest" class="weight-500" target="_blank" rel="noopener">Latest Release <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+      </div>
+      <div class="btn main-link-btn">
+        <a href="https://npmjs.org/package/easiermongo" class="weight-500" target="_blank" rel="noopener">View on NPM <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+      </div>
+      <br></br>
+      <span class="btn backround-darker">
+        <code class="bg-8 fw-300 em-1_5"id="npm-install-path">npm i easiermongo</code>
+        <button type="button" id="copy-button1" class="copy-button">
+          <span class="copy-button__text"><svg id="copy-button1__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.4em" height="1.4em" class="inline-block default-color mb-1" aria-hidden="true"><path id="copy-button1__icon__path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1M8 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m0 0h2a2 2 0 0 1 2 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg></span>
+        </button>
+          <!---->
+          
+      </span>
+      </div>
+    </header>
+    <main id="content" class="main-content" role="main">
+        <p class="lh-1">
+            <h1 class="lh-1"><strong>DocumentExpiryManager</strong></h1>
+            <strong class="lh-1">extends <a href="https://nodejs.org/dist/latest/docs/api/events.html#events_class_eventemitter" class="weight-500" target="_blank" rel="noopener">EventEmitter <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></strong>
+        </p>
+        <p>The DocumentExpiryManager.</p>
+        <h2><strong>Constructor</strong></h2>
+        <pre class="fs-08em"><code><span class="hljs-keyword">new</span> <span class="hljs-name">DocumentExpiryManager</span>(model);</code></pre>
+        <table class="content-table">
+            <thead>
+              <tr>
+                <th>PARAMETER</th>
+                <th>TYPE</th>
+                <th>OPTIONAL</th>
+                <th>DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>model</td>
+                <td><a href="../MongoModel/">MongoModel</a></td>
+                <td><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="h-5 w-5 mx-auto" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 13l4 4L19 7"></path></svg></td>
+                <td>The parent of this manager.</td>
+              </tr>
+            </tbody>
+        </table>
+        <div class="grid grid-colls-3 mb-10 mt-3">
+            <!---->
+            <div class="inline-block mr-10 ">
+              <button id="properties-dropdown-btn" class="dropdown-btn inline-block fs-1em">
+                <svg id="properties-dropdown-btn__icon__hide" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5l7 7l-7 7"></path></svg>
+                <svg hide="true" id="properties-dropdown-btn__icon__show" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9l-7 7l-7-7"></path></svg>
+                <span class="fw-500 fs-1em">PROPERTIES</span>
+              </button>
+              <ul id="properties-dropdown-list" hide="true" class="no-dot pis-25 mt-0_5">
+                <li class="docs-link"><a href="./#.model">model</a></li>
+                <li class="docs-link"><a href="./#.clock">clock</a><span class="private">PRIVATE</span></li>
+                <li class="docs-link"><a href="./#.willExpire">willExpire</a></li>
+              </ul>
+            </div>
+            <div class="inline-block mr-10">
+              <button id="methods-dropdown-btn" class="dropdown-btn inline-block fs-1em">
+                <svg id="methods-dropdown-btn__icon__hide" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5l7 7l-7 7"></path></svg>
+                <svg hide="true" id="methods-dropdown-btn__icon__show" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9l-7 7l-7-7"></path></svg>
+                <span class="fw-500 fs-1em">METHODS</span>
+              </button>
+              <ul id="methods-dropdown-list" hide="true" class="no-dot pis-25 mt-0_5">
+                <li class="docs-link"><a href="./#.checkExpire()">checkExpire</a></li>
+                <li class="docs-link"><a href="./#.destroy()">destroy</a></li>
+                <li class="docs-link"><a href="./#.register()">register</a></li>
+                <li class="docs-link"><a href="./#.remove()">remove</a></li>
+              </ul>
+            </div>
+            <div class="inline-block mr-10">
+                <button id="events-dropdown-btn" class="dropdown-btn inline-block fs-1em">
+                  <svg id="events-dropdown-btn__icon__hide" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5l7 7l-7 7"></path></svg>
+                  <svg hide="true" id="events-dropdown-btn__icon__show" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" class="inline-block" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9l-7 7l-7-7"></path></svg>
+                  <span class="fw-500 fs-1em">EVENTS</span>
+                </button>
+                <ul id="events-dropdown-list" hide="true" class="no-dot pis-25 mt-0_5">
+                  <li class="docs-link"><a href="./##expire">expire</a></li>
+                </ul>
+              </div>
+            <!---->
+        </div>
+        <div>
+            <h2>Properties</h2>
+            <div>
+              <h3 class="lh-1"><strong><a name=".model" href="./#.model">.model</a></strong></h3>
+              The model bound to this manager.
+              <br><strong>Type:</strong> <a href="../MongoModel/">MongoMode</a><br/>
+            </div>
+            <div class="separator-line"></div>
+            <div>
+              <h3 class="lh-1"><strong><a name=".clock" href="./#.clock">.clock</a><span class="private">PRIVATE</span></strong></h3>
+              The interval clock.
+              <br><strong>Type:</strong> <a target="_blank" rel="noopener" href="https://nodejs.org/api/timers.html">NodeJS.Timer <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a><br/>
+            </div>
+            <div class="separator-line"></div>
+            <div>
+                <h3 class="lh-1"><strong><a name=".willExpire" href="./#.willExpire">.willExpire</a></strong></h3>
+                An array of Ids of documents who will expire.
+                <br><strong>Type:</strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&lt;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>&gt;<br/>
+              </div>
+              <div class="separator-line"></div>
+        </div> 
+        <div>
+            <h2>Methods</h2>
+            <div>
+              <h3 class="lh-1"><strong><a href="./#.checkExpire()" name=".checkExpire()">.checkExpire()</a></strong></a></h3>
+              Check if a document is about to expire. (And removes it)
+              <br>
+              <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void">void <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></strong>
+              <div class="separator-line"></div>
+            </div>
+            <div>
+                <h3 class="lh-1"><strong><a href="./#.destroy()" name=".destroy()">.destroy()</a></strong></a></h3>
+                Destroy this manager.
+                <br>
+                <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void">void <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></strong>
+                <div class="separator-line"></div>
+              </div>
+            <div>
+                <h3 class="lh-1"><strong><a href="./#.register()" name=".register()">.register(<span class="link-lighter">id</span>)</a></strong></a></h3>
+                Register a new document to the manager.
+                <table class="content-table">
+                  <thead>
+                    <tr>
+                      <th>PARAMETER</th>
+                      <th>TYPE</th>
+                      <th>DESCRIPTION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>id</td>
+                      <td><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></td>
+                      <td>The unique Identifier of the document.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></strong>
+                <div class="separator-line"></div>
+            </div>
+            <div>
+                <h3 class="lh-1"><strong><a href="./#.remove()" name=".remove()">.remove(<span class="link-lighter">id</span>)</a></strong></a></h3>
+                Remove a document from the manager.
+                <table class="content-table">
+                  <thead>
+                    <tr>
+                      <th>PARAMETER</th>
+                      <th>TYPE</th>
+                      <th>DESCRIPTION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>id</td>
+                      <td><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></td>
+                      <td>The unique Identifier of the document.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <strong>Returns: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></strong>
+                <div class="separator-line"></div>
+            </div>
+        </div>
+        <div>
+            <h2>Events</h2>
+            <div>
+                <h3 class="lh-1"><strong><a name="#expire" href="./##expire">expire</a></strong></h3>
+                Emitted when a model registered in the manager expires.
+                <table class="content-table">
+                  <thead>
+                    <tr>
+                      <th>PARAMETER</th>
+                      <th>TYPE</th>
+                      <th>DESCRIPTION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>id</td>
+                      <td><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
+                      <td>The model ID.</td>
+                    </tr>
+                    <tr>
+                        <td>document</td>
+                        <td><a href="../MongoDocument/">MongoDocument</a></td>
+                        <td>The document who just expired.</td>
+                      </tr>
+                  </tbody>
+                </table>
+                <div class="separator-line"></div>
+              </div>
+        </div> 
+    </main>
+  <script src="../../../../scripts/dropdown.js" type="module"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script name="tippy" src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script type="module">
+    import { copy } from "../../../../scripts/copy.js"
+    copy()
+    tippy(document.getElementById("copy-button1"), {
+            content: "Copied",
+            placement:'top',
+            trigger: 'click',
+            delay: [0, 1000],
+            theme: 'green',
+            animation: "fade",
+            onShow(instance) {
+              setTimeout(() => { instance.hide() }, 3000)
+            }
+            
+    })
+  </script>
+  <script type="module" src="../../../../scripts/searchBar_v2.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+</body>
 </html>

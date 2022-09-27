@@ -132,6 +132,21 @@ const DocumentBuilder_Methods_Properties = [
     {name: "DocumentBuilder.setId()", parent: "DocumentBuilder", type: "method", get href() {return URL(this)}},
     {name: "DocumentBuilder.addField()", parent: "DocumentBuilder", type: "method", get href() {return URL(this)}},
     {name: "DocumentBuilder.addFields()", parent: "DocumentBuilder", type: "method", get href() {return URL(this)}},
+];
+
+const DocumentExpiryManager_Methods_Properties_Events = [
+    //Properties
+    {name: "DocumentExpiryManager.model", parent: "DocumentExpiryManager", type: "property", get href() {return URL(this)}},
+    {name: "DocumentExpiryManager.clock", parent: "DocumentExpiryManager", type: "property", get href() {return URL(this)}},
+    {name: "DocumentExpiryManager.willExpire", parent: "DocumentExpiryManager", type: "property", get href() {return URL(this)}},
+    //Methods
+    {name: "DocumentExpiryManager.checkExpire()", parent: "DocumentExpiryManager", type: "method", get href() {return URL(this)}},
+    {name: "DocumentExpiryManager.destroy()", parent: "DocumentExpiryManager", type: "method", get href() {return URL(this)}},
+    {name: "DocumentExpiryManager.register()", parent: "DocumentExpiryManager", type: "method", get href() {return URL(this)}},
+    {name: "DocumentExpiryManager.remove()", parent: "DocumentExpiryManager", type: "method", get href() {return URL(this)}},
+    //Events
+    {name: "DocumentExpiryManager#expire", parent: "DocumentExpiryManager", type: "event", get href() {return URL(this)}},
+
 ]
 
 export default {
@@ -152,6 +167,9 @@ export default {
         ...MongoModel_Methods_Properties,
 
         //DocumentBuilder
-        ...DocumentBuilder_Methods_Properties
+        ...DocumentBuilder_Methods_Properties,
+
+        //DocumentExpiryManager
+        ...DocumentExpiryManager_Methods_Properties_Events,
     ]
 }
