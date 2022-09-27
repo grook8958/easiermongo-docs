@@ -109,15 +109,15 @@
                 <span class="fw-500 fs-1em">EVENTS</span>
               </button>
               <ul id="events-dropdown-list" hide="true" class="no-dot pis-25 mt-0_5">
-                <li class="docs-link"><a href="./#error">error</a></li>
-                <li class="docs-link"><a href="./#disconnected">disconnected</a></li>
-                <li class="docs-link"><a href="./#disconnecting">disconnecting</a></li>
-                <li class="docs-link"><a href="./#connected">connected</a></li>
-                <li class="docs-link"><a href="./#connecting">connecting</a></li>
-                <li class="docs-link"><a href="./#reconnected">reconnected</a></li>
-                <li class="docs-link"><a href="./#close">close</a></li>
-                <li class="docs-link"><a href="./#ready">ready</a></li>
-                <li class="docs-link"><a href="./#file">file</a></li>
+                <li class="docs-link"><a href="./##error">error</a></li>
+                <li class="docs-link"><a href="./##disconnected">disconnected</a></li>
+                <li class="docs-link"><a href="./##disconnecting">disconnecting</a></li>
+                <li class="docs-link"><a href="./##connected">connected</a></li>
+                <li class="docs-link"><a href="./##connecting">connecting</a></li>
+                <li class="docs-link"><a href="./##reconnected">reconnected</a></li>
+                <li class="docs-link"><a href="./##close">close</a></li>
+                <li class="docs-link"><a href="./##ready">ready</a></li>
+                <li class="docs-link"><a href="./##file">file</a></li>
               </ul>
             </div>
             <!---->
@@ -189,7 +189,7 @@
           <div>
             <h2>Events</h2>
             <div>
-              <h3 class="lh-1"><strong><a name="error" href="./#error">error</a></strong></h3>
+              <h3 class="lh-1"><strong><a name="#error" href="./##error">error</a></strong></h3>
               Emitted when an error occurs.
               <table class="content-table">
                 <thead>
@@ -210,17 +210,17 @@
               <div class="separator-line"></div>
             </div>
             <div>
-              <h3 class="lh-1"><strong><a name="disconnected" href="./#disconnected">disconnected</a></strong></h3>
+              <h3 class="lh-1"><strong><a name="#disconnected" href="./##disconnected">disconnected</a></strong></h3>
               Emitted when then connection gets disconnected.
               <div class="separator-line"></div>
             </div>
             <div>
-              <h3 class="lh-1"><strong><a name="disconnecting" href="./#disconnecting">disconnecting</a></strong></h3>
+              <h3 class="lh-1"><strong><a name="#disconnecting" href="./##disconnecting">disconnecting</a></strong></h3>
               Emitted when the connection is disconnecting.
               <div class="separator-line"></div>
             </div>
             <div>
-              <h3 class="lh-1"><strong><a name="connected" href="./#connected">connected</a></strong></h3>
+              <h3 class="lh-1"><strong><a name="#connected" href="./##connected">connected</a></strong></h3>
               Emitted when the connection is established.
               <table class="content-table">
                 <thead>
@@ -241,44 +241,46 @@
               <div class="separator-line"></div>
             </div>
             <div>
-              <h3 class="lh-1"><strong><a name="connecting" href="./#connecting">connecting</a></strong></h3>
+              <h3 class="lh-1"><strong><a name="#onnecting" href="./##connecting">connecting</a></strong></h3>
               Emitted when a connection is trying to be established.
               <div class="separator-line"></div>
             </div>
             <div>
-              <h3 class="lh-1"><strong><a name="reconnected" href="./#reconnected">reconnected</a></strong></h3>
+              <h3 class="lh-1"><strong><a name="#reconnected" href="./##reconnected">reconnected</a></strong></h3>
               Emitted when the connection is reconnected after being disconnected.
               <div class="separator-line"></div>
             </div>
             <div>
-              <h3 class="lh-1"><strong><a name="close" href="./#close">close</a></strong></h3>
+              <h3 class="lh-1"><strong><a name="#close" href="./##close">close</a></strong></h3>
               Emitted when the connection is sucessfully closed.
               <div class="separator-line"></div>
             </div>
             <div>
-              <h3 class="lh-1"><strong><a name="ready" href="./#ready">ready</a></strong></h3>
+              <h3 class="lh-1"><strong><a name="#ready" href="./##ready">ready</a></strong></h3>
               Emitted when the client is ready to perform actions.
               <div class="separator-line"></div>
             </div>
-            <h3 class="lh-1"><strong><a name="file" href="./#file">file</a></strong></h3>
-            Emitted when a schema file is registered.
-            <table class="content-table">
-              <thead>
-                <tr>
-                  <th>PARAMETER</th>
-                  <th>TYPE</th>
-                  <th>DESCRIPTION</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>file</td>
-                  <td><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
-                  <td>The schema file name.</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="separator-line"></div>
+            <div>
+              <h3 class="lh-1"><strong><a name="#file" href="./##file">file</a></strong></h3>
+              Emitted when a schema file is registered.
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>file</td>
+                    <td><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.3em" height="1.3em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></td>
+                    <td>The schema file name.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="separator-line"></div>
+            </div>
           </div>
     </main>
   <script src="../../../../scripts/dropdown.js" type="module"></script>
