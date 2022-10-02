@@ -15,7 +15,7 @@
       <a href="https://easiermongo.js.org/">Home</a>
       <a href="https://easiermongo.js.org/#about">About</a>
       <a href="https://easiermongo.js.org/#getting-started">Getting Started</a>
-      <a class="active" href="https://easiermongo.js.org/docs/v1/">Documentation</a>
+      <a class="active" href="https://easiermongo.js.org/docs/v2/">Documentation</a>
       <a href="https://easiermongo.js.org/faq/">FAQ</a>
       
     </div>
@@ -28,6 +28,12 @@
         </div>
         <input hidden type="submit">
       </form>
+      <div id="version-picker" class="select-menu" style="width:100px;" value="v2.0">
+        <button class="select-menu-button" type="button">
+          <span class="selected">v2.0</span>
+          <svg class="select-menu-arrow" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path class="select-menu-arrow-path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15l7-7l7 7"></path></svg>
+        </button>
+      </div>
     </div>
     <div>
       <div class="btn main-link-btn">
@@ -49,8 +55,10 @@
           <!---->
           
       </span>
-      </div>
-    </header>
+    </div>
+      
+        
+  </header>
     <main id="content" class="main-content" role="main">
         <p class="lh-1">
             <h1 class="lh-1"><strong>MongoSchema</strong></h1>
@@ -128,6 +136,7 @@
             
     })
   </script>
+  <script type="module" src="../../../../scripts/versionPicker.js"></script>
   <script type="module" src="../../../../scripts/searchBar_v2.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    

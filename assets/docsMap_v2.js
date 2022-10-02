@@ -1,5 +1,5 @@
-const rootClassURL = "https://easiermongo.js.org/docs/v1/classes/";
-const rootTypeDefURL = "https://easiermongo.js.org/docs/v1/typedefs/";
+const rootClassURL = "https://easiermongo.js.org/docs/v2/classes/";
+const rootTypeDefURL = "https://easiermongo.js.org/docs/v2/typedefs/";
 
 const URL = (thisArg) => {
     const nonClassOrTypedefTypes = ['method', 'property', 'event']
@@ -9,21 +9,21 @@ const URL = (thisArg) => {
 };
 
 const Classes = [
-    {"name": "ConnectionStringBuilder", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/ConnectionStringBuilder/"},
-    {"name": "Database", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/Database/"},
-    {name: "DocumentBuilder", type: "class", href: "https://easiermongo.js.org/docs/v1/classes/DocumentBuilder/"},
-    {name: "DocumentExpiryManager", type: "class", href: "https://easiermongo.js.org/docs/v1/classes/DocumentExpiryManager/"},
-    {"name": "MongoClient", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/MongoClient/"},
-    {name: "MongoDocument", type: "class", href: "https://easiermongo.js.org/docs/v1/classes/MongoDocument/"},
-    {"name": "MongoError", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/MongoError/"},
-    {"name": "MongoModel", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/"},
-    {"name": "MongoSchema", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/MongoSchema/"},
-    {"name": "Options", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/Options/"},
-    {"name": "SchemaBuilder", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/SchemaBuilder/"},
-    {"name": "SchemaFieldBuilder", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/SchemaFieldBuilder/"},
-    {"name": "SchemaFileManager", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/SchemaFileManager/"},
-    {"name": "SchemaManager", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/SchemaManager/"},
-    {"name": "Utils", "type": "class", "href": "https://easiermongo.js.org/docs/v1/classes/Utils/"},
+    {"name": "ConnectionStringBuilder", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/ConnectionStringBuilder/"},
+    {"name": "Database", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/Database/"},
+    {name: "DocumentBuilder", type: "class", href: "https://easiermongo.js.org/docs/v2/classes/DocumentBuilder/"},
+    {name: "DocumentExpiryManager", type: "class", href: "https://easiermongo.js.org/docs/v2/classes/DocumentExpiryManager/"},
+    {"name": "MongoClient", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/MongoClient/"},
+    {name: "MongoDocument", type: "class", href: "https://easiermongo.js.org/docs/v2/classes/MongoDocument/"},
+    {"name": "MongoError", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/MongoError/"},
+    {"name": "MongoModel", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/"},
+    {"name": "MongoSchema", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/MongoSchema/"},
+    {"name": "Options", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/Options/"},
+    {"name": "SchemaBuilder", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/SchemaBuilder/"},
+    {"name": "SchemaFieldBuilder", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/SchemaFieldBuilder/"},
+    {"name": "SchemaFileManager", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/SchemaFileManager/"},
+    {"name": "SchemaManager", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/SchemaManager/"},
+    {"name": "Utils", "type": "class", "href": "https://easiermongo.js.org/docs/v2/classes/Utils/"},
 
 ];
 
@@ -42,26 +42,26 @@ const Typedefs = [
 const MongoModel_Methods_Properties = [
     //Properties
     {name: "MongoModel._model", parent: "MongoModel", type: "property", get href() { return `${rootClassURL}${this.parent}/#${this.name.replace(this.parent, '')}`}},
-    {"name": "MongoModel.makeCache", "parent": "MongoModel", "type": "property", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.makeCache"},
-    {"name": "MongoModel.cache", "parent": "MongoModel", "type": "property", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.cache"},
-    {"name": "MongoModel.ttl", "parent": "MongoModel", "type": "property", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.ttl"},
-    {"name": "MongoModel._expiryManager", "parent": "MongoModel", "type": "property", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#._expiryManager"},
+    {"name": "MongoModel.makeCache", "parent": "MongoModel", "type": "property", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.makeCache"},
+    {"name": "MongoModel.cache", "parent": "MongoModel", "type": "property", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.cache"},
+    {"name": "MongoModel.ttl", "parent": "MongoModel", "type": "property", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.ttl"},
+    {"name": "MongoModel._expiryManager", "parent": "MongoModel", "type": "property", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#._expiryManager"},
     //Methods
-    {"name": "MongoModel.create()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.create()"},
-    {"name": "MongoModel.getAll()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.getAll()"},
-    {"name": "MongoModel.get()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.get()"},
-    {"name": "MongoModel.find()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.find()"},
-    {"name": "MongoModel.findMany()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.findMany()"},
-    {"name": "MongoModel.edit()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.edit()"},
-    {"name": "MongoModel.findAndEdit()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.findAndEdit()"},
-    {"name": "MongoModel.editMany()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.editMany()"},
-    {"name": "MongoModel.delete()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.delete()"},
-    {"name": "MongoModel.findAndDelete()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.findAndDelete()"},
-    {"name": "MongoModel.deleteMany()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.deleteMany()"},
-    {"name": "MongoModel.update()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.update()"},
-    {"name": "MongoModel.findAndUpdate()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.findAndUpdate()"},
-    {"name": "MongoModel.updateMany()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.updateMany()"},
-    {"name": "MongoModel.onExpire()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v1/classes/MongoModel/#.onExpire()"},
+    {"name": "MongoModel.create()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.create()"},
+    {"name": "MongoModel.getAll()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.getAll()"},
+    {"name": "MongoModel.get()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.get()"},
+    {"name": "MongoModel.find()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.find()"},
+    {"name": "MongoModel.findMany()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.findMany()"},
+    {"name": "MongoModel.edit()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.edit()"},
+    {"name": "MongoModel.findAndEdit()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.findAndEdit()"},
+    {"name": "MongoModel.editMany()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.editMany()"},
+    {"name": "MongoModel.delete()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.delete()"},
+    {"name": "MongoModel.findAndDelete()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.findAndDelete()"},
+    {"name": "MongoModel.deleteMany()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.deleteMany()"},
+    {"name": "MongoModel.update()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.update()"},
+    {"name": "MongoModel.findAndUpdate()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.findAndUpdate()"},
+    {"name": "MongoModel.updateMany()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.updateMany()"},
+    {"name": "MongoModel.onExpire()", "parent": "MongoModel", "type": "method", "href": "https://easiermongo.js.org/docs/v2/classes/MongoModel/#.onExpire()"},
 ];
 
 const MongoClient_Methods_Properties_Events = [

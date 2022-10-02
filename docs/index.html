@@ -4,7 +4,10 @@
         <h1>Redirecting...</h1>
         <strong>Redirecting to another page.</strong>
     </body>
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', () => window.location.href = 'https://easiermongo.js.org/docs/v1')
+    <script type="module">
+        (async () => {
+            const Constants = await fetch('../assets/constants.json').then(res => res.json());
+            window.location.href = Constants.DEFAULT_DOCS_PAGE
+        })()
     </script>
 </html>

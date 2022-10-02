@@ -2,7 +2,7 @@ const classesContainer = document.querySelector("[data-docs-classes-container]")
 const typedefsContainer = document.querySelector("[data-docs-typedefs-container]")
 const searchInput = document.querySelector("[data-search]")
 
-import docsMap_v1 from '../assets/docsMap_v1.js';
+import docsMap_v2 from '../assets/docsMap_v2.js';
 
 
 let classes = [];
@@ -30,7 +30,7 @@ searchInput.addEventListener("input", e => {
 });
 
 window.addEventListener('load', () => {
-    docsMap_v1.docs.forEach(doc => {
+    docsMap_v2.docs.forEach(doc => {
         const li = document.createElement("li");
         const link = document.createElement("a");
         link.setAttribute('href', doc.href);
