@@ -1,4 +1,6 @@
-import docsMap_v1 from '../assets/docsMap_v1.js';
+import docsMap_v2 from '../assets/docsMap_v2.js';
+
+import { getVersion } from './getVersion.js';
 
 
 function autocomplete(inp, arr) {
@@ -7,6 +9,8 @@ function autocomplete(inp, arr) {
     var currentFocus;
     /*execute a function when someone writes in the text field:*/
     inp.addEventListener("input", function(e) {
+      //Load the correct data.
+      if (getVersion() === 'v2.0') arr = docsMap_v2.docs;
         var a, b, i, val = this.value;
         /*close any already open lists of autocompleted values*/
         closeAllLists();
@@ -138,7 +142,7 @@ function autocomplete(inp, arr) {
   }
   
   /*An array containing all the country names in the world:*/
-  var data = docsMap_v1.docs;
+  var data = docsMap_v2.docs;
   
   /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
   autocomplete(document.getElementById("myInput"), data);

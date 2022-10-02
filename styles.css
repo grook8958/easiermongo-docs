@@ -132,7 +132,7 @@ svg {
 
 .btn.main-link-btn {
   position: relative;
-  left: 150px;
+  left: 200px;
 }
 
 p {
@@ -957,4 +957,82 @@ danger .body .mini-code-block {
 .autocomplete-active {
   border-left: solid var(--blue) !important;
   color: #f2f2f2; 
+}
+
+.select-menu {
+  display: inline-block;
+}
+
+.select-menu button {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: .375rem;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 4px 5px 4px 5px;
+  width: inherit;
+  text-align: left;
+}
+
+.select-menu button .selected {
+  margin-left: 1px;
+  color: var(--main-white); 
+  font-weight: 500;
+}
+
+.select-menu-arrow {
+  color: var(--main-white); 
+  font-weight: 500;
+  margin-top: 2px;
+  float: right;
+}
+
+.select-menu-items-container {
+  position: absolute;
+  display: list-item;
+  background-color: transparent;
+  border-radius: .175rem;
+  color: transparent;
+  margin-top: 4px;
+  width: inherit;
+  z-index: 99;
+  overflow: visible ;
+}
+
+.select-menu-items-container div {
+  border-left: solid transparent;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px;
+  padding-left: 6px;
+  cursor: pointer;
+  background-color: transparent; 
+  border-left-width: .25em !important;
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-left: 0px;
+  width: inherit;
+}
+
+.select-menu-items-container div:last-child {
+  border-bottom-left-radius: .175rem;
+  border-bottom-right-radius: .175rem;
+}
+
+.select-menu-items-container div:first-child {
+  border-top-left-radius: .175rem;
+  border-top-right-radius: .175rem;
+}
+
+.select-menu-items-container div:hover {
+  border-left: solid var(--blue);
+}
+
+#version-picker {
+  position: relative;
+  bottom: 186px;
+  float: right;
+  margin-right: 10px;
+  
 }
