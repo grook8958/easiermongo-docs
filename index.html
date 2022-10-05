@@ -5,140 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    
-   
     <title>Easiermongo</title>
 </head>
 <body id="body">
-  <noscript>
-    <strong
-      >Sorry, but the easiermongo website doesn't work properly without JavaScript enabled. Please enable it to
-      continue.</strong
-    >
-  </noscript>
-  <header id="page-header" class="page-header" role="banner">
-    <div class="navbar-top" id="navbar">
-      <a class="active" href="https://easiermongo.js.org/">Home</a>
-      <a href="https://easiermongo.js.org/#about">About</a>
-      <a href="https://easiermongo.js.org/#getting-started">Getting Started</a>
-      <a href="https://easiermongo.js.org/docs/v2/">Documentation</a>
-      <a href="https://easiermongo.js.org/faq/">FAQ</a>
-      
-    </div>
-    <h1 id="title" class="project-name">Easiermongo</h1>
-    <h2 class="project-tagline">An easy way to get started with MongoDB</h2>
-    <div>
-      <form autocomplete="off" action="/action_page.php" class="form-autocomplete">
-        <div class="autocomplete" style="width:300px;">
-          <input id="myInput" type="text" name="myCountry" placeholder="Search...">
+    <noscript>
+        <strong>Sorry, but the easiermongo website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <header id="page-header" class="page-header" role="banner">
+        <div class="navbar-top" id="navbar">
+            <a class="active" href="https://easiermongo.js.org/">Home</a>
+            <a href="https://easiermongo.js.org/#about">About</a>
+            <a href="https://easiermongo.js.org/#getting-started">Getting Started</a>
+            <a href="https://easiermongo.js.org/docs/v2/">Documentation</a>
+            <a href="https://easiermongo.js.org/faq/">FAQ</a> 
         </div>
-        <input hidden type="submit">
-      </form>
-      <div id="version-picker" class="select-menu" style="width:100px;" value="v2.0">
-        <button class="select-menu-button" type="button">
-          <span class="selected">v2.0</span>
-          <svg class="select-menu-arrow" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path class="select-menu-arrow-path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15l7-7l7 7"></path></svg>
-        </button>
-      </div>
-    </div>
-    <div>
-      <div class="btn main-link-btn">
-        <a href="https://github.com/grook8958/easiermongo" class="weight-500" target="_blank" rel="noopener">View on GitHub <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="mb-1 weight-500" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-      </div>
-      <div class="btn main-link-btn">
-        <a href="https://github.com/grook8958/easiermongo/releases/latest" class="weight-500" target="_blank" rel="noopener">Latest Release <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-        </a>
-      </div>
-      <div class="btn main-link-btn">
-        <a href="https://npmjs.org/package/easiermongo" class="weight-500" target="_blank" rel="noopener">View on NPM <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-      </div>
-      <br></br>
-      <span class="btn backround-darker">
-        <code class="bg-8 fw-300 em-1_5"id="npm-install-path">npm i easiermongo</code>
-        <button type="button" id="copy-button1" class="copy-button">
-          <span class="copy-button__text"><svg id="copy-button1__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.4em" height="1.4em" class="inline-block default-color mb-1" aria-hidden="true"><path id="copy-button1__icon__path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1M8 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m0 0h2a2 2 0 0 1 2 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg></span>
-        </button>
-          <!---->
-          
-      </span>
-    </div>
-      
-        
-  </header>
+        <h1 id="title" class="project-name">Easiermongo</h1>
+        <h2 class="project-tagline">An easy way to get started with MongoDB</h2>
+        <div>
+            <form autocomplete="off" action="/action_page.php" class="form-autocomplete">
+                <div class="autocomplete" style="width:300px;">
+                    <input id="myInput" type="text" name="myCountry" placeholder="Search...">
+                </div>
+                <input hidden type="submit">
+            </form>
+            <div id="version-picker" class="select-menu" style="width:100px;" value="v2.0">
+                <button class="select-menu-button" type="button">
+                    <span class="selected">v2.0</span>
+                    <svg class="select-menu-arrow" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path class="select-menu-arrow-path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15l7-7l7 7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div>
+            <div class="btn main-link-btn">
+                <a href="https://github.com/grook8958/easiermongo" class="weight-500" target="_blank" rel="noopener">View on GitHub <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="mb-1 weight-500" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+            </div>
+            <div class="btn main-link-btn">
+                <a href="https://github.com/grook8958/easiermongo/releases/latest" class="weight-500" target="_blank" rel="noopener">Latest Release <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+            </div>
+            <div class="btn main-link-btn">
+                <a href="https://npmjs.org/package/easiermongo" class="weight-500" target="_blank" rel="noopener">View on NPM <svg preserveAspectRatio="xMidYMid meet" class="mb-1 weight-500" viewBox="0 0 24 24" width="1.4em" height="1.4em"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+            </div>
+            <br>
+            <span class="btn backround-darker">
+                <code class="bg-8 fw-300 em-1_5"id="npm-install-path">npm i easiermongo</code>
+                <button type="button" id="copy-button1" class="copy-button">
+                    <span class="copy-button__text"><svg id="copy-button1__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.4em" height="1.4em" class="inline-block default-color mb-1" aria-hidden="true"><path id="copy-button1__icon__path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1M8 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m0 0h2a2 2 0 0 1 2 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg></span>
+                </button>
+            </span>
+        </div>
+    </header>
     <main id="content" class="main-content" role="main">
-      <h1 id="about"><strong>About</strong></h1>
-      <div>
-        <img src="https://img.shields.io/npm/dt/easiermongo" alt="Downloads Number">
-        <img src="https://img.shields.io/npm/v/easiermongo" alt="Package Version">
-        <img src="https://img.shields.io/npm/l/easiermongo" alt="License">
-      </div>
-      <p>
-        Easiermongo is a simple
-        <span class="color-link weight-500">
-          <a href="http://nodejs.org." target="_blank" rel="noopener">
-            Node.js 
-            <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-          </a>
-        </span>
-        library for begginers with
-        <span class="color-link weight-500">
-          <a href="http://mongodb.com" target="_blank" rel="noopener">
-            MongoDB.
-            <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-          </a>
-        </span>
+        <h1 id="about"><strong>About</strong></h1>
+        <div>
+            <img src="https://img.shields.io/npm/dt/easiermongo" alt="Downloads Number">
+            <img src="https://img.shields.io/npm/v/easiermongo" alt="Package Version">
+            <img src="https://img.shields.io/npm/l/easiermongo" alt="License">
+        </div>
         <p>
-          It has a very object-oriented approach which makes your code cleaner and easier to read.
-          The main goals of this library is not 100% cover the MongoDB API but instead cover in the easiest way possible the basics.
+            Easiermongo is a simple
+            <span class="color-link weight-500"><a href="http://nodejs.org." target="_blank" rel="noopener">Node.js <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></span>
+            library for begginers with
+            <span class="color-link weight-500"><a href="http://mongodb.com" target="_blank" rel="noopener">MongoDB <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></span>
         </p>
-      </p>
-      <h2 id="getting-started"><strong>Getting Started</strong></h1>
-      <p>
-        Open a connection to your database.
-        <pre class="bg-8">
-<code><span class="hljs-keyword">const</span> { <span class="hljs-title class_">MongoClient</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'easiermongo'</span>);
-<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MongoClient</span>({ <span class="hljs-attr">uri</span>: <span class="hljs-string">'your-uri-here'</span> });
-            
-client.<span class="hljs-title function_">on</span>(<span class="hljs-string">'ready'</span>, <span class="hljs-function">() =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Connected to <span class="hljs-subst">${client.database.name}</span>!`</span>);
-});
-            
-client.<span class="hljs-title function_">connect</span>();</code></pre>
-        There are two ways to register a schema, adding them manually or adding them via the file system.
-        <br></br>
-        <strong>Register manually</strong>
-        <pre class="bg-8">
-<code><span class="hljs-keyword">const</span> { <span class="hljs-title class_">SchemaBuilder</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'easiermongo'</span>);
-
-<span class="hljs-keyword">const</span> mySchema = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SchemaBuilder</span>()
-  .<span class="hljs-title function_">addField</span>(field => field.<span class="hljs-title function_">setName</span>(<span class="hljs-string">'myField'</span>).<span class="hljs-title function_">setType</span>(<span class="hljs-string">'STRING'</span>))
-  .<span class="hljs-title function_">addField</span>(field => field.<span class="hljs-title function_">setName</span>(<span class="hljs-string">'mySecondField'</span>).<span class="hljs-title function_">setType</span>(<span class="hljs-string">'NUMBER'</span>).<span class="hljs-title function_">setDefault</span>(<span class="hljs-number">0</span>))
-<span class="hljs-comment">//Register your schema</span>
-client.database.schemas.<span class="hljs-title function_">addSchema</span>(<span class="hljs-string">'mySchemaName'</span>, mySchema);
-</code></pre>
-        <strong>Register via the file system</strong>
-        <br>Download <a href="./examples/getting-started-fs.zip" download="">this</a> example.</br>
-        <br></br>
-        Once connected and your schemas are registered you may start performing actions
-        <pre class="bg-8">
-<code><span class="hljs-keyword">const</span> mySchema = client.database.schemas.collection.<span class="hljs-title function_">get</span>(<span class="hljs-string">'your-schema-name'</span>).model;
-<span class="hljs-comment">//You may also get your schema like this: const mySchema = client.database.schemas.SCHEMA_NAME_HERE;</span>
-<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> mySchema.<span class="hljs-title function_">get</span>(<span class="hljs-string">'some-id'</span>);
-
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result);</code></pre>
-        Click <a href="./examples/getting-started.js" download="">here</a> to download the first example and click <a href="./examples/getting-started-fs.zip" download="">here</a> for the example using the file system.
-      </p>
-      <h2><strong>Usefull Links</strong></h2>
-      <ul>
-        <li><a href="/">Webiste</a></li>
-        <li><a href="/docs">Documentation</a></li>
-        <li><a target="_blank" rel="noopener" href="https://github.com/grook8958/easiermongo">GitHub <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-        </a></li>
-        <li><a target="_blank" rel="noopener" href="https://npmjs.org/package/easiermongo">npm <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-        </a></li>
-        <li><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/">Mongoose Documentation <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-        </a></li>
-      </ul>
+        <p>
+            It has a very object-oriented approach which makes your code cleaner and easier to read.
+            The main goals of this library is not 100% cover the MongoDB API but instead cover in the easiest way possible the basics.
+        </p>
+      
+        <h2 id="getting-started"><strong>Getting Started</strong></h1>
+        <p>
+            Open a connection to your database.
+            <pre class="bg-8"><code><span class="hljs-keyword">const</span> { <span class="hljs-title class_">MongoClient</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'easiermongo'</span>);<br><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MongoClient</span>({ <span class="hljs-attr">uri</span>: <span class="hljs-string">'your-uri-here'</span> });<br><br>client.<span class="hljs-title function_">on</span>(<span class="hljs-string">'ready'</span>, <span class="hljs-function">() =&gt;</span> {<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Connected to <span class="hljs-subst">${client.database.name}</span>!`</span>);<br>});<br><br>client.<span class="hljs-title function_">connect</span>();</code></pre>
+            There are two ways to register a schema, adding them manually or adding them via the file system.
+            <br>
+            <br>
+            <strong>Register manually</strong>
+            <pre class="bg-8"><code><span class="hljs-keyword">const</span> { <span class="hljs-title class_">SchemaBuilder</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'easiermongo'</span>);<br><br><span class="hljs-keyword">const</span> mySchema = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SchemaBuilder</span>()<br>    .<span class="hljs-title function_">addField</span>(field => field.<span class="hljs-title function_">setName</span>(<span class="hljs-string">'myField'</span>).<span class="hljs-title function_">setType</span>(<span class="hljs-string">'STRING'</span>))<br>    .<span class="hljs-title function_">addField</span>(field => field.<span class="hljs-title function_">setName</span>(<span class="hljs-string">'mySecondField'</span>).<span class="hljs-title function_">setType</span>(<span class="hljs-string">'NUMBER'</span>).<span class="hljs-title function_">setDefault</span>(<span class="hljs-number">0</span>))<br><span class="hljs-comment">//Register your schema</span><br>client.database.schemas.<span class="hljs-title function_">addSchema</span>(<span class="hljs-string">'mySchemaName'</span>, mySchema);</code></pre>
+            <strong>Register via the file system</strong>
+            <br>Download <a href="./examples/getting-started-fs.zip" download="">this</a> example.</br>
+            <br>
+            Once connected and your schemas are registered you may start performing actions
+            <pre class="bg-8"><code><span class="hljs-keyword">const</span> mySchema = client.database.schemas.collection.<span class="hljs-title function_">get</span>(<span class="hljs-string">'your-schema-name'</span>).model;<br><span class="hljs-comment">//You may also get your schema like this: const mySchema = client.database.schemas.SCHEMA_NAME_HERE;</span><br><span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> mySchema.<span class="hljs-title function_">get</span>(<span class="hljs-string">'some-id'</span>);<br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result);</code></pre>
+            Click <a href="./examples/getting-started.js" download="">here</a> to download the first example and click <a href="./examples/getting-started-fs.zip" download="">here</a> for the example using the file system.
+        </p>
+        <h2><strong>Usefull Links</strong></h2>
+        <ul>
+            <li><a href="/">Webiste</a></li>
+            <li><a href="/docs">Documentation</a></li>
+            <li><a target="_blank" rel="noopener" href="https://github.com/grook8958/easiermongo">GitHub <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></li>
+            <li><a target="_blank" rel="noopener" href="https://npmjs.org/package/easiermongo">npm <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></li>
+            <li><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/">Mongoose Documentation <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="inline-block mb-1 color-link" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></li>
+        </ul>
     </main>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
   <script name="tippy" src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
