@@ -3,6 +3,7 @@ class HTMLSelectMenu {
      * A custom HTML Select Menu.
      * @param {string} containerId 
      * @param {Array<string>} data 
+     * @param {(item: HTMLElement) => {}}
      */
     constructor(containerId, data, onSelected = (item) => { return undefined }) {
         /**
