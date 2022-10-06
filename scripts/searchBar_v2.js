@@ -1,6 +1,6 @@
 import docsMap_v2 from '../assets/docsMap_v2.js';
 
-import { getVersion } from './getVersion.js';
+import { getVersion } from './index.js';
 
 
 function autocomplete(inp, arr) {
