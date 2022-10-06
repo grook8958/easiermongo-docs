@@ -12,11 +12,11 @@ html, body {
   --main-white: #f2f2f2;
   --blue: #2374aa;
   --green: #0ca157;
-
+  --text-grey: #606c71;
 }
 
-.default-color {
-  color: "#606c71";
+*:focus-visible {
+  outline: none;
 }
 
 .page-header {
