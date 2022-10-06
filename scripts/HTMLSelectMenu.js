@@ -1,4 +1,3 @@
-
 class HTMLSelectMenu {
     /**
      * A custom HTML Select Menu.
@@ -40,8 +39,10 @@ class HTMLSelectMenu {
             arrowPath: this.container.querySelector('.select-menu-arrow-path'),
         }
 
+        //Validate the options
         this._validate();
 
+        //Initialize the function
         this.init();
     }
 
@@ -87,15 +88,13 @@ class HTMLSelectMenu {
         this._toggleArrow();
         this.setSelected(this.data.current);
 
-        //Run the custom function passed
-        //this.onSelected(element);
+        this.onSelected(element);
     }
 
     /**
      * Close the SelectMenu
      */
     closeSelectMenu() {
-        //console.log("Closed")
         return this.childElements.itemContainer.remove(); 
     }
 
@@ -155,7 +154,7 @@ class HTMLSelectMenu {
         if (!this.container) throw new RangeError('[INVALID_ID] The id passed to the constructor is invalid.');
         for (const key in this.childElements) {
             if (key === 'itemContainer') continue;
-            if (!this.childElements[key]) throw new RangeError(`[MISSING_ELEMENT] The "${key}" element is missing.`)
+            if (!this.childElements[key]) throw new RangeError(`[MISSING_ELEMENT] The "${key}" element is missing.`);
         }
     }
 }
