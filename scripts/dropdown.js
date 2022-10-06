@@ -24,5 +24,3 @@ function toggleDropdown(dropdown) {
         dropdown.setAttribute('hide', 'true')
     }
 }
-
-//m19 9l-7 7l-7-7
