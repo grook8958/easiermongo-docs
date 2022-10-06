@@ -16,8 +16,6 @@ class HTMLSelectMenu {
          */
         this.container = document.getElementById(containerId);
 
-        this._validate();
-
         /**
          * @typedef {Object} HTMLSelectMenuData
          * @property {string} selected The current selected item
@@ -37,10 +35,12 @@ class HTMLSelectMenu {
         this.onSelected = onSelected;
 
         this.childElements = {
+            itemContainer: null,
             button: this.container.querySelector('.select-menu-button'),
             arrowPath: this.container.querySelector('.select-menu-arrow-path'),
-            itemContainer: null,
         }
+
+        this._validate();
 
         this.init();
     }
@@ -152,9 +152,10 @@ class HTMLSelectMenu {
         if (typeof this.rawArgs.onSelected !== 'function') throw new TypeError('[INVALID_TYPE] The "onSelected" option must be a function.');
         if (typeof this.rawArgs.containerId !== 'string') throw new TypeError('[INVALID_TYPE] The "containerId" option must be a string.');
         if (!Array.isArray(this.rawArgs.data)) throw new TypeError('[INVALID_TYPE] The "data" option must be an Array of strings.');
-        if (!this.container instanceof HTMLElement) throw new RangeError('[INVALID_ID] The id passed to the constructor is invalid.');
+        if (!this.container) throw new RangeError('[INVALID_ID] The id passed to the constructor is invalid.');
         for (const key in this.childElements) {
-            if (!this.childElements[key] instanceof HTMLElement) throw new RangeError(`[MISSING_ELEMENT] The "${key}" element is missing.`);
+            if (key === 'itemContainer') continue;
+            if (!this.childElements[key]) throw new RangeError(`[MISSING_ELEMENT] The "${key}" element is missing.`)
         }
     }
 }
