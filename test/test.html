@@ -4,14 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .select-menu {
+            display: block;
+        }
+
+        .select-menu-button {
+            background-color: dodgerblue;
+            outline: none;
+            border: 1px solid lightskyblue;
+            border-radius: .375rem;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+        }
+
+        .select-menu-items-container {
+            background-color: lightseagreen;
+            border-radius: .175rem;
+            padding-left: 10px;
+            width: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Test</h1>
-    <div id="randome-id"></div>
+    <div id="randome-id" class="select-menu" style="width:100px;" value="v2.0">
+        <button class="select-menu-button" type="button">
+            <span class="selected">v2.0</span>
+            <svg class="select-menu-arrow" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path class="select-menu-arrow-path" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15l7-7l7 7"></path></svg>
+        </button>
+    </div>
     <script type="module">
         import HTMLSelectMenu from "../scripts/HTMLSelectMenu.js"
 
-        new HTMLSelectMenu('randome-id', [])
+        new HTMLSelectMenu('randome-id', ["Item1", "Item2"], (element) => {console.log(element)})
     </script>
 </body>
 </html>
